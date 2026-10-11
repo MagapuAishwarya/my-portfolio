@@ -1,0 +1,42 @@
+.education-list {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.education-item {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 1.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--charcoal);
+  overflow: hidden;
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent-gradient);
+}
+
+.education-item h3 {
+  margin-bottom: 0.35rem;
+  font-size: 1.2rem;
+}
+
+.education-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-bottom: 0.85rem;
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.education-item p {
+  max-width: 70ch;
+}

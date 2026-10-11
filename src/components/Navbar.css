@@ -1,0 +1,123 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  border-bottom: 1px solid rgba(42, 42, 56, 0.8);
+  background: rgba(5, 5, 8, 0.82);
+  backdrop-filter: blur(16px);
+}
+
+.navbar-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.03em;
+}
+
+.logo:hover {
+  color: var(--violet);
+}
+
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--charcoal);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.nav-toggle-bars,
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 0 auto;
+  background: currentColor;
+  border-radius: 999px;
+  position: relative;
+}
+
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle-bars::before {
+  top: -6px;
+}
+
+.nav-toggle-bars::after {
+  top: 6px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  color: var(--text);
+  background: rgba(167, 139, 250, 0.12);
+}
+
+@media (max-width: 860px) {
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: calc(var(--nav-height) + 0.5rem);
+    right: 0.75rem;
+    left: 0.75rem;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: #101018;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-list.is-open {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    min-height: 44px;
+  }
+}

@@ -1,0 +1,22 @@
+.resume-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at right top, rgba(124, 58, 237, 0.2), transparent 42%),
+    var(--charcoal);
+}
+
+.resume-card h3 {
+  margin-bottom: 0.55rem;
+  font-size: 1.4rem;
+}
+
+.resume-card p {
+  max-width: 58ch;
+}
