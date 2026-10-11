@@ -5,7 +5,7 @@ import "./Resume.css";
 function Resume() {
   return (
     <section
-      className="section section-alt"
+      className="section section-alt "
       id="resume"
       aria-labelledby="resume-title"
     >
@@ -25,10 +25,6 @@ function Resume() {
             </p>
           </div>
           <a className="btn btn-primary" href={profile.resumeFile} download>
-            // href={profile.resumeFile} ---- specifies the file to open or
-            download. // download ---- tells the browser to download the file
-            rather than navigate to it, when supported. // {profile.resumeLabel}{" "}
-            ---- displays the button text, Download Resume
             {profile.resumeLabel}
           </a>
         </div>
