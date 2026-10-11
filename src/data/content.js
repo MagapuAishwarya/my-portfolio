@@ -12,8 +12,8 @@ export const profile = {
     'I enjoy working with React, Node.js, and PostgreSQL while exploring how AI APIs can be integrated into real-world applications.',
   ],
   email: 'girijamagapu123@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/magapuaishwarya',
-  github: 'https://github.com/MagapuAishwarya',
+  linkedin: 'https://www.linkedin.com/in/magapuaiiiiiishwarya',
+  github: 'https://github.com/MagapuAiiiishwarya',
   resumeFile: '/AishwaryaMagapuresume2712.docx',
   resumeLabel: 'Download Resume',
 }
@@ -87,21 +87,21 @@ export const education = [
     credential: 'Bachelor of Technology (B.Tech) in Computer Science and Engineering at Visakhapatnam,A.P',
     dates: '2023 – 2026',
     details:
-      'CGPA: 8.05/10 | Percentage: 74.99%',
+      'CGPA: 0.00/10 | Percentage: 00.00%',
   },
   {
     id: 'edu-2',
     institution: 'Dadi Institute Of Engineering and Technology',
     credential: 'Diploma in Electronics and Communication Engineering at Anakapalle, A.P ',
     dates: '2020 – 2023',
-      details: 'CGPA: /10 | Percentage: 79.32%',
+      details: 'CGPA: /10 | Percentage: 00.00%',
   },
   {
     id: 'edu-3',
     institution: 'Bhashyam Public School',
-    credential: 'Board Of Secondary Education   at Anakapalle, A.P ',
+    credential: 'Board Of Secondary Education at Anakapalle, A.P ',
     dates: '2019 – 2020',
     details:
-    'Total: 591/600 | Percentage: 98.5%',
+    'Total: 591/600 | Percentage: 00.00%',
   },
 ]
